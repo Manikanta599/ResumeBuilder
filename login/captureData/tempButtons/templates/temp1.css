@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Makes the container a reference point for absolutely positioned elements inside it */
+    width: 100%;        /* Adjust as needed */
+    height: auto; 
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+h2 {
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0; 
+}
+
+/* Centering the skills section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between the skill categories */
+}
+
+.skills-container > div {
+    text-align: center; /* Center text within each skill section */
+}
+
+
+#profile-photo {
+    position: absolute;  /* Positions the element relative to the nearest positioned ancestor (or the document if none exists) */
+    top: 0;              /* Set the top of the image to the top of the page */
+    left: 0;             /* Align the image to the left side of the page */
+    width: 150px;        /* Set a fixed width (adjust as necessary) */
+    height: auto;        /* Maintain the aspect ratio of the image */
+    margin: 10px;        /* Optional: Adds some space around the image */
+}
+

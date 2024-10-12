@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./temp4.css">
+    <script src="temp1.js" defer></script>
+    <title>Fresher Resume</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+    <button id="download-btn" onclick="downloadResume()">Download Resume</button>
+    <div class="container">
+        <header class="header">
+            <h1 id="name"></h1>
+            <p id="job-title">Software Developer</p> <!-- Placeholder for job title -->
+            <img id="profile-photo" src="" alt="Profile Photo">
+            <p id="summary"></p>
+            <p>
+                <a id="github" href="" target="_blank">GitHub Profile</a> | 
+                <a id="linkedin" href="" target="_blank">LinkedIn Profile</a>
+            </p>
+        </header>
+
+        <div class="content">
+            <section class="section">
+                <h2>Contact Information</h2>
+                <p id="phone"></p>
+                <p id="email"></p>
+                <p id="address"></p>
+            </section>
+
+            <section class="section">
+                <h2>Education</h2>
+                <ul id="education-list"></ul>
+            </section>
+
+            <section class="section">
+                <h2>Projects</h2>
+                <ul id="projects-list"></ul>
+            </section>
+
+            <section class="section">
+                <h2>Skills</h2>
+                <ul id="skills-list"></ul>
+            </section>
+
+            <section class="section">
+                <h2>Experience</h2>
+                <ul id="experience-list"></ul> <!-- Renamed from internships to experience -->
+            </section>
+        </div>
+    </div>
+</body>
+</html>

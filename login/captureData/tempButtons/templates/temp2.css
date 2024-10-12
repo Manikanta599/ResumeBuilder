@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    background-color: #fff;
+    border-radius: 8px; /* Added rounded corners */
+}
+
+.sidebar {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-top-left-radius: 8px; /* Rounded corners */
+    border-bottom-left-radius: 8px; /* Rounded corners */
+}
+
+.sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.sidebar h1 {
+    font-size: 1.6em; /* Slightly larger font for name */
+    margin: 15px 0; /* Increased margin for better spacing */
+}
+
+.sidebar p {
+    margin: 10px 0; /* Increased margin for better readability */
+}
+
+.sidebar .social-links {
+    margin: 20px 0; /* Space above and below social links */
+}
+
+.sidebar .social-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px; /* Increased spacing between links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.sidebar .social-links a:hover {
+    text-decoration: underline;
+    color: #3498db; /* Change link color on hover */
+}
+
+.main-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.section {
+    margin-bottom: 30px; /* Increased space between sections */
+}
+
+.section h2 {
+    border-bottom: 3px solid #3498db; /* Thicker border for section headers */
+    padding-bottom: 5px;
+    font-size: 1.5em; /* Slightly larger section header */
+    color: #2c3e50; /* Darker color for section headers */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Added space above skills container */
+}
+
+.skills-container div {
+    width: 48%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #ecf0f1; /* Light background for list items */
+    margin: 5px 0; /* Space between list items */
+    padding: 8px; /* Padding inside list items */
+    border-radius: 4px; /* Rounded corners for list items */
+}

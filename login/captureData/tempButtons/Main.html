@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Display</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<script>
+
+    
+function loadTemplate(template) {
+    const iframe = document.getElementById('template-display');
+    
+    // Clear previous onload event
+    iframe.onload = null;
+
+    // Set the iframe's src to the selected template
+    iframe.src = template;
+    currentTemplate = template;
+
+    // Add an event listener to detect when the iframe content has loaded
+    iframe.onload = () => {
+        // Enable the download button when the template has loaded
+        document.getElementById('download-button').disabled = false;
+    };
+
+    // Disable the download button until the template is loaded
+    document.getElementById('download-button').disabled = true;
+}
+
+
+</script>
+<body>
+
+    <h1>Select a Template</h1>
+    
+    <!-- Buttons to load templates -->
+    <button class="template-button" onclick="loadTemplate('templates/temp1.html')">Template 1</button>
+    <button class="template-button" onclick="loadTemplate('templates/temp2.html')">Template 2</button>
+    <button class="template-button" onclick="loadTemplate('templates/temp3.html')">Template 3</button>
+    <button class="template-button" onclick="loadTemplate('templates/temp4.html')">Template 4</button>
+    <button class="template-button" onclick="loadTemplate('templates/temp5.html')">Template 5</button>
+    <button class="template-button" onclick="loadTemplate('templates/temp6.html')">Template 6</button>
+    
+    <!-- Iframe to display the selected template -->
+    <iframe id="template-display" src="" frameborder="0" style="width: 100%; height: 400px;"></iframe>
+    
+</body>
+</html>

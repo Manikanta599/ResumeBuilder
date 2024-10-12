@@ -1,0 +1,12 @@
+/* Basic styles */
+.template-button, .download-button {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#template-display {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+}

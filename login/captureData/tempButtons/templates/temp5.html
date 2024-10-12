@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./temp5.css">
+    <script src="./temp1.js" defer></script>
+    <title>John Doe's Resume</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+    <button id="download-btn" onclick="downloadResume()">Download Resume</button>
+    <div class="container">
+        <header class="header">
+            <img id="profile-photo" src="" alt="Profile Photo">
+            <h1 id="name"></h1>
+            <p id="summary"></p>
+            <div class="contact-info">
+                <p><span class="icon">📞</span> <span id="phone"></span></p>
+                <p><span class="icon">✉️</span> <span id="email"></span></p>
+                <p><span class="icon">🏠</span> <span id="address"></span></p>
+                <p>
+                    <span class="icon">🔗</span>
+                    <a id="github" href="#" target="_blank">GitHub</a> | 
+                    <a id="linkedin" href="#" target="_blank">LinkedIn</a>
+                </p>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>🎓 Education</h2>
+            <ul id="education-list"></ul>
+        </section>
+
+        <section class="section">
+            <h2>💻 Projects</h2>
+            <ul id="projects-list"></ul>
+        </section>
+
+        <section class="section">
+            <h2>🛠 Skills</h2>
+            <h3>💻 Programming Skills</h3>
+            <ul id="programming-skills-list"></ul>
+            <h3>🖥 Hardware Skills</h3>
+            <ul id="hardware-skills-list"></ul>
+        </section>
+
+        <section class="section">
+            <h2>💼 Experience</h2>
+            <ul id="experience-list"></ul>
+        </section>
+    </div>
+</body>
+</html>
